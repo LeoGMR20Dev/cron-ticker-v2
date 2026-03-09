@@ -104,7 +104,7 @@ jobs:
           path: dist/
       - name: Deploy Logs
         run: |
-          echo "Deploying: ${cat dist/build-info.json}"
+          echo "Deploying: $(cat dist/build-info.json)"
   # build:
   #   runs-on: ubuntu-latest
 
